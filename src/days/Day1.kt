@@ -13,24 +13,8 @@ object Day1 : Day {
         }
 
     val Digits = listOf(
-        "one",
-        "two",
-        "three",
-        "four",
-        "five",
-        "six",
-        "seven",
-        "eight",
-        "nine",
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
+        "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
+        1, 2, 3, 4, 5, 6, 7, 8, 9
     ).withIndex().associate { (i, d) -> d.toString() to (if (d is Int) d else (i + 1)) }
 
     override fun part2(input: List<String>): Int {
